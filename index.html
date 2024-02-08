@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>kth largest/smallest</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="d-flex bg-gradient">
+        <div class="d-flex flex-grow-1">
+        
+          <div class="flex-grow-1">
+            <div class="ReactTitle ">
+              <h3>kth largest/smallest </h3>
+            </div>
+            <div class="d-flex ps-3 align-items-center">
+              <div class="flex-grow-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="container" style="margin-bottom: 100px">
+      <h5 class="text-start">
+        Kth largest/smallest element in an array </h5>
+      <p class="text-start">
+        The most naive approach is to sort the given array in descending order  
+        The index of kth Largest element = k-1 (zero- based indexing)
+        
+        The index of kth Smallest element = n-k. The array can also be sorted in ascending order
+          The index of kth Largest element = n-k
+      </p>
+        <div class="array">
+          <h4>Find Largest and Smallest Elements</h4><br>
+
+          <label for="inputArray">Enter numbers separated by commas:</label>
+          <input type="text" id="inputArray" placeholder="e.g., 5, 2, 9, 1, 7, 4, 8">
+          <button type="button" class="btn btn-primary"  onclick="findLargestSmallest()">Find</button>
+        
+          <div id="result"></div>
+        </div>
+      
+    </main>
+
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-center px-5">
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/Array.js"></script>
+    <script src="assets/js/theme.js" defer></script>
+  </body>
+</html>
